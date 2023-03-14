@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bhsd"
+		]
+	},
+	"combobox-desc": "Adds <code>&lt;combobox&gt;</code> and <code>&lt;combooption&gt;</code> tags for creating OOUI ComboBox widgets.",
+	"combobox-option-without-name": "Each <code>&lt;combooption&gt;</code> tag must have the \"name\" attribute.",
+	"combobox-option-without-for": "Each <code>&lt;combooption&gt;</code> tag must either nest inside a <code>&lt;combobox&gt;</code> tag or have the \"for\" attribute."
+}

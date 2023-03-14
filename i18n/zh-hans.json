@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bhsd"
+		]
+	},
+	"combobox-desc": "加入<code>&lt;combobox&gt;</code>和<code>&lt;combooption&gt;</code>标签以创建OOUI ComboBox。"
+}

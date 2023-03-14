@@ -1,0 +1,9 @@
+.ext-combobox-text .oo-ui-inputWidget-input {
+	border-right-width: 1px;
+	border-radius: 2px;
+}
+.ext-combobox-text span.oo-ui-indicator-down,
+.ext-combobox-text .oo-ui-comboBoxInputWidget-dropdownButton,
+.combobox-field {
+	display: none;
+}

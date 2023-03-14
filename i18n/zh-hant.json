@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bhsd"
+		]
+	},
+	"combobox-desc": "增加 <code>&lt;combobox&gt;</code> 與 <code>&lt;combooption&gt;<code> 標籤用來建立OOUI ComboBox。"
+}
