@@ -52,8 +52,8 @@ class ComboBox {
 				. wfMessage( 'combobox-option-without-name' )
 				. '</span>';
 		}
-		$lang = $parser->getTargetLanguage();
-		$name = $lang->convert( $attr['name'] );
+		$converter = $parser->getTargetLanguageConverter();
+		$name = $converter->convert( $attr['name'] );
 		$id = Sanitizer::safeEncodeAttribute( $name );
 		if ( $parser->comboboxData['nested'] === true ) {
 			$options = &$parser->comboboxData['options'];
@@ -98,17 +98,17 @@ class ComboBox {
 			$parser->comboboxData['enabled'] = true;
 			$parser->enableOOUI();
 			$pout = $parser->getOutput();
-			$pout->addModules( 'ext.combobox' );
-			$pout->addModuleStyles( 'ext.combobox.styles' );
+			$pout->addModules( [ 'ext.combobox' ] );
+			$pout->addModuleStyles( [ 'ext.combobox.styles' ] );
 		}
 		$parser->comboboxData['options'] = array();
 		$parser->comboboxData['nested'] = true;
-		$lang = $parser->getTargetLanguage();
+		$converter = $parser->getTargetLanguageConverter();
 		$placeholder = isset( $attr['placeholder'] ) ?
-			$lang->convert( $attr['placeholder'] ) :
+			$converter->convert( $attr['placeholder'] ) :
 			'';
 		$value = isset( $attr['value'] ) ?
-			$lang->convert( $attr['value'] ) :
+			$converter->convert( $attr['value'] ) :
 			'';
 		$id = isset( $attr['id'] ) ?
 			Sanitizer::safeEncodeAttribute( $attr['id'] ) :
